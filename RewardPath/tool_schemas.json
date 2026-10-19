@@ -1,0 +1,211 @@
+[
+  {
+    "name": "list_opportunities",
+    "description": "Return a bounded catalog. Synthetic examples are not real reward offers.",
+    "inputSchema": {
+      "properties": {},
+      "title": "list_opportunitiesArguments",
+      "type": "object"
+    }
+  },
+  {
+    "name": "evaluate_eligibility",
+    "description": "Check eligibility as pass/fail/unknown. Missing facts cannot become pass.",
+    "inputSchema": {
+      "properties": {
+        "opportunity_id": {
+          "title": "Opportunity Id",
+          "type": "string"
+        },
+        "profile": {
+          "additionalProperties": true,
+          "title": "Profile",
+          "type": "object"
+        }
+      },
+      "required": [
+        "opportunity_id",
+        "profile"
+      ],
+      "title": "evaluate_eligibilityArguments",
+      "type": "object"
+    }
+  },
+  {
+    "name": "compare_plans",
+    "description": "Check compatibility, prerequisites and zero-spend constraints; never infer win odds.",
+    "inputSchema": {
+      "properties": {
+        "opportunity_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Opportunity Ids",
+          "type": "array"
+        },
+        "profile": {
+          "additionalProperties": true,
+          "title": "Profile",
+          "type": "object"
+        }
+      },
+      "required": [
+        "opportunity_ids",
+        "profile"
+      ],
+      "title": "compare_plansArguments",
+      "type": "object"
+    }
+  },
+  {
+    "name": "create_plan",
+    "description": "Create only a compatible, eligible local plan. This does not enroll or submit anywhere.",
+    "inputSchema": {
+      "properties": {
+        "opportunity_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Opportunity Ids",
+          "type": "array"
+        },
+        "profile": {
+          "additionalProperties": true,
+          "title": "Profile",
+          "type": "object"
+        }
+      },
+      "required": [
+        "opportunity_ids",
+        "profile"
+      ],
+      "title": "create_planArguments",
+      "type": "object"
+    }
+  },
+  {
+    "name": "update_obligation",
+    "description": "Mark an ordered local obligation complete. Submission steps require evidence.",
+    "inputSchema": {
+      "properties": {
+        "plan_id": {
+          "title": "Plan Id",
+          "type": "string"
+        },
+        "obligation_id": {
+          "title": "Obligation Id",
+          "type": "string"
+        },
+        "evidence_description": {
+          "default": "",
+          "title": "Evidence Description",
+          "type": "string"
+        }
+      },
+      "required": [
+        "plan_id",
+        "obligation_id"
+      ],
+      "title": "update_obligationArguments",
+      "type": "object"
+    }
+  },
+  {
+    "name": "record_award",
+    "description": "Record an unverified award after submission. An award is not a payout.",
+    "inputSchema": {
+      "properties": {
+        "plan_id": {
+          "title": "Plan Id",
+          "type": "string"
+        },
+        "opportunity_id": {
+          "title": "Opportunity Id",
+          "type": "string"
+        },
+        "amount_cents": {
+          "title": "Amount Cents",
+          "type": "integer"
+        },
+        "currency": {
+          "title": "Currency",
+          "type": "string"
+        },
+        "evidence_description": {
+          "title": "Evidence Description",
+          "type": "string"
+        },
+        "source_reference": {
+          "title": "Source Reference",
+          "type": "string"
+        }
+      },
+      "required": [
+        "plan_id",
+        "opportunity_id",
+        "amount_cents",
+        "currency",
+        "evidence_description",
+        "source_reference"
+      ],
+      "title": "record_awardArguments",
+      "type": "object"
+    }
+  },
+  {
+    "name": "record_receipt",
+    "description": "Record evidence of a claimed receipt, always unverified; never fabricate payment confirmation.",
+    "inputSchema": {
+      "properties": {
+        "plan_id": {
+          "title": "Plan Id",
+          "type": "string"
+        },
+        "award_id": {
+          "title": "Award Id",
+          "type": "string"
+        },
+        "amount_cents": {
+          "title": "Amount Cents",
+          "type": "integer"
+        },
+        "currency": {
+          "title": "Currency",
+          "type": "string"
+        },
+        "received_at": {
+          "title": "Received At",
+          "type": "string"
+        },
+        "evidence_description": {
+          "title": "Evidence Description",
+          "type": "string"
+        },
+        "source_reference": {
+          "title": "Source Reference",
+          "type": "string"
+        }
+      },
+      "required": [
+        "plan_id",
+        "award_id",
+        "amount_cents",
+        "currency",
+        "received_at",
+        "evidence_description",
+        "source_reference"
+      ],
+      "title": "record_receiptArguments",
+      "type": "object"
+    }
+  },
+  {
+    "name": "get_ledger",
+    "description": "Separate synthetic, reported and independently verified money. No verification is claimed.",
+    "inputSchema": {
+      "properties": {},
+      "title": "get_ledgerArguments",
+      "type": "object"
+    }
+  }
+]

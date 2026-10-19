@@ -1,0 +1,265 @@
+[
+  {
+    "id": "demo-review",
+    "title": "Documentation clarity review",
+    "organization": "Sample developer program",
+    "synthetic": true,
+    "summary": "Review a public getting-started guide and submit an evidence-backed usability report. Fictional offer for testing.",
+    "reward_kind": "guaranteed_after_conditions",
+    "cash_cents": 3000,
+    "currency": "USD",
+    "upfront_cents": 0,
+    "remote": true,
+    "ai_allowed": true,
+    "human_writing_required": false,
+    "min_age": 18,
+    "countries": [
+      "US"
+    ],
+    "deadline": "2026-11-05T21:00:00Z",
+    "conflict_groups": [],
+    "prerequisites": [],
+    "requires_affiliation_check": false,
+    "source_url": "demo:clarity-review-v1",
+    "source_label": "Synthetic terms \u2022 not an available offer",
+    "verified_at": "2026-10-19",
+    "obligations": [
+      {
+        "id": "prepare",
+        "title": "Prepare a reproducible review",
+        "evidence_required": false
+      },
+      {
+        "id": "submit",
+        "title": "Record the report submission confirmation",
+        "evidence_required": true
+      }
+    ]
+  },
+  {
+    "id": "demo-bounty",
+    "title": "Accessible component bounty",
+    "organization": "Sample open-source project",
+    "synthetic": true,
+    "summary": "Build and test a keyboard-accessible component. Payment depends on selection and acceptance. Fictional offer.",
+    "reward_kind": "competitive",
+    "cash_cents": 7500,
+    "currency": "USD",
+    "upfront_cents": 0,
+    "remote": true,
+    "ai_allowed": true,
+    "human_writing_required": false,
+    "min_age": 18,
+    "countries": [
+      "US"
+    ],
+    "deadline": "2026-11-08T17:00:00Z",
+    "conflict_groups": [
+      "sample-component-entry"
+    ],
+    "prerequisites": [],
+    "requires_affiliation_check": false,
+    "source_url": "demo:component-bounty-v1",
+    "source_label": "Synthetic terms \u2022 not an available offer",
+    "verified_at": "2026-10-19",
+    "obligations": [
+      {
+        "id": "prepare",
+        "title": "Build and verify the component",
+        "evidence_required": false
+      },
+      {
+        "id": "submit",
+        "title": "Record the submitted contribution URL",
+        "evidence_required": true
+      }
+    ]
+  },
+  {
+    "id": "demo-design",
+    "title": "Component design challenge",
+    "organization": "Sample design community",
+    "synthetic": true,
+    "summary": "An alternative competition for the same sample component entry. Cannot be stacked with the component bounty.",
+    "reward_kind": "competitive",
+    "cash_cents": 10000,
+    "currency": "USD",
+    "upfront_cents": 0,
+    "remote": true,
+    "ai_allowed": true,
+    "human_writing_required": false,
+    "min_age": 18,
+    "countries": [
+      "US"
+    ],
+    "deadline": "2026-11-09T17:00:00Z",
+    "conflict_groups": [
+      "sample-component-entry"
+    ],
+    "prerequisites": [],
+    "requires_affiliation_check": false,
+    "source_url": "demo:design-challenge-v1",
+    "source_label": "Synthetic terms \u2022 not an available offer",
+    "verified_at": "2026-10-19",
+    "obligations": [
+      {
+        "id": "prepare",
+        "title": "Prepare the design prototype",
+        "evidence_required": false
+      },
+      {
+        "id": "submit",
+        "title": "Record the design submission confirmation",
+        "evidence_required": true
+      }
+    ]
+  },
+  {
+    "id": "demo-spend",
+    "title": "Spend-to-earn promotion",
+    "organization": "Sample retailer",
+    "synthetic": true,
+    "summary": "A $50 headline reward requires $200 of purchases. Excluded by a zero-upfront-spend constraint.",
+    "reward_kind": "guaranteed_after_conditions",
+    "cash_cents": 5000,
+    "currency": "USD",
+    "upfront_cents": 20000,
+    "remote": true,
+    "ai_allowed": true,
+    "human_writing_required": false,
+    "min_age": 18,
+    "countries": [
+      "US"
+    ],
+    "deadline": "2026-11-10T17:00:00Z",
+    "conflict_groups": [],
+    "prerequisites": [],
+    "requires_affiliation_check": false,
+    "source_url": "demo:spend-promotion-v1",
+    "source_label": "Synthetic terms \u2022 not an available offer",
+    "verified_at": "2026-10-19",
+    "obligations": [
+      {
+        "id": "prepare",
+        "title": "Meet the purchase condition",
+        "evidence_required": true
+      },
+      {
+        "id": "submit",
+        "title": "Submit a claim",
+        "evidence_required": true
+      }
+    ]
+  },
+  {
+    "id": "demo-unclear",
+    "title": "Unclear automation policy",
+    "organization": "Sample research program",
+    "synthetic": true,
+    "summary": "The offer does not explain whether AI-assisted work is permitted. Missing permission stays unknown.",
+    "reward_kind": "discretionary",
+    "cash_cents": 2500,
+    "currency": "USD",
+    "upfront_cents": 0,
+    "remote": true,
+    "ai_allowed": null,
+    "human_writing_required": false,
+    "min_age": 18,
+    "countries": [
+      "US"
+    ],
+    "deadline": "2026-11-12T17:00:00Z",
+    "conflict_groups": [],
+    "prerequisites": [],
+    "requires_affiliation_check": false,
+    "source_url": "demo:unclear-policy-v1",
+    "source_label": "Synthetic terms \u2022 not an available offer",
+    "verified_at": "2026-10-19",
+    "obligations": [
+      {
+        "id": "prepare",
+        "title": "Resolve the AI-use policy",
+        "evidence_required": true
+      },
+      {
+        "id": "submit",
+        "title": "Record submission",
+        "evidence_required": true
+      }
+    ]
+  },
+  {
+    "id": "demo-human",
+    "title": "Human-written research reflection",
+    "organization": "Sample education program",
+    "synthetic": true,
+    "summary": "A fictional $40 reward requires an original human-written reflection. Agent-authored deliverables do not qualify.",
+    "reward_kind": "guaranteed_after_conditions",
+    "cash_cents": 4000,
+    "currency": "USD",
+    "upfront_cents": 0,
+    "remote": true,
+    "ai_allowed": true,
+    "human_writing_required": true,
+    "min_age": 18,
+    "countries": [
+      "US"
+    ],
+    "deadline": "2026-11-05T21:00:00Z",
+    "conflict_groups": [],
+    "prerequisites": [],
+    "requires_affiliation_check": false,
+    "source_url": "demo:human-reflection-v1",
+    "source_label": "Synthetic terms \u2022 not an available offer",
+    "verified_at": "2026-10-19",
+    "obligations": [
+      {
+        "id": "prepare",
+        "title": "Prepare a reproducible review",
+        "evidence_required": false
+      },
+      {
+        "id": "submit",
+        "title": "Record the report submission confirmation",
+        "evidence_required": true
+      }
+    ]
+  },
+  {
+    "id": "amazon-alexa",
+    "title": "Amazon Alexa+ developer hackathon",
+    "organization": "Amazon / Devpost",
+    "synthetic": false,
+    "summary": "Build a working MCP integration or simulated Alexa+ experience. Three competitive cash awards; $25,000 is the top award, not expected earnings.",
+    "reward_kind": "competitive",
+    "cash_cents": 2500000,
+    "currency": "USD",
+    "upfront_cents": 0,
+    "remote": true,
+    "ai_allowed": true,
+    "human_writing_required": false,
+    "min_age": 18,
+    "countries": [
+      "US"
+    ],
+    "deadline": "2026-10-23T19:00:00Z",
+    "conflict_groups": [],
+    "prerequisites": [],
+    "requires_affiliation_check": true,
+    "source_url": "https://amazonappdev2026.devpost.com/rules",
+    "source_label": "Official event rules \u2022 recheck before entry",
+    "verified_at": "2026-10-19",
+    "obligations": [
+      {
+        "id": "prepare",
+        "title": "Build, test and prepare the repo and video",
+        "evidence_required": false
+      },
+      {
+        "id": "submit",
+        "title": "Record the actual Devpost entry confirmation",
+        "evidence_required": true
+      }
+    ]
+  }
+]
